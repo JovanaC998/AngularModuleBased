@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpHeaders, provideHttpClient } from '@angular/common/http';
 import { EmployeeTableComponent } from './employee-table/employee-table.component';
+import { EmployeeChartComponent } from './employee-chart/employee-chart.component';
 
 @NgModule({
   declarations: [
-    EmployeeTableComponent
+    EmployeeTableComponent, EmployeeChartComponent
   ],
   imports: [
     CommonModule,
@@ -13,7 +14,7 @@ import { EmployeeTableComponent } from './employee-table/employee-table.componen
   providers: [
   ],
   exports: [
-    EmployeeTableComponent
+    EmployeeTableComponent, EmployeeChartComponent
   ]
 })
 export class EmployeesModule { }
