@@ -1,0 +1,15 @@
+<table class="styled-table">
+    <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Total Time (Hours)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees" [ngClass]="{'less-than-100-hours': employee.totalTimeInHours < 100}">
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.totalTimeInHours }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
